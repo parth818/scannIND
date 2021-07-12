@@ -148,7 +148,7 @@
             <div class="tile is-7 is-parent">
               <div class="tile is-child box animate__animated animate__zoomInDown animate__delay-1s">
                 <div class="iframe-container">
-                  <iframe frameborder="0" scrolling="no" id="output_pdf" src="res/Preview.pdf"></iframe>
+                  <iframe frameborder="0" scrolling="no" id="output_pdf" src="res/preview.pdf"></iframe>
                 </div>
               </div>
             </div>
@@ -250,8 +250,8 @@
           // console.log(output_pdf.src);
       
           if (input_files.length == 0) {
-              if (!output_pdf.src.endsWith("res/Preview.pdf")) {
-                  output_pdf.src = "res/Preview.pdf";
+              if (!output_pdf.src.endsWith("res/preview.pdf")) {
+                  output_pdf.src = "res/preview.pdf";
               }
               toggleButtonLoading();
           }
@@ -261,8 +261,8 @@
               const file = fp_file.file;
       
               if (!file.type.startsWith('image/')) {
-                  if (!output_pdf.src.endsWith("res/Preview.pdf")) {
-                      output_pdf.src = "res/Preview.pdf";
+                  if (!output_pdf.src.endsWith("res/preview.pdf")) {
+                      output_pdf.src = "res/preview.pdf";
                   }
                   toggleButtonLoading();
                   return;
